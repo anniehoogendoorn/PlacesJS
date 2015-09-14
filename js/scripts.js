@@ -22,7 +22,6 @@ $(document).ready(function(event) {
         $(".new-landmark").each(function() {
             var inputLandmark = $(this).val();
             newPlace.landmarks.push(inputLandmark);
-            console.log(newPlace.landmarks);
         });
 
 
@@ -37,12 +36,12 @@ $(document).ready(function(event) {
             $(".date").text(newPlace.date);
             $(".notes").text(newPlace.notes);
 
+            // Clear all form values
             $("input#new-place-name").val("");
             $("input#new-location").val("");
-            $("input#new-landmark").val("");
+            $("input.new-landmark").val("");
             $("input#new-date").val("");
             $("textarea#new-notes").val("");
         });
     });
-        // debugger;
 });
