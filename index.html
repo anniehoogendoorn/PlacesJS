@@ -23,18 +23,25 @@
                             <label for="new-location">Location</label>
                             <input type="text" class="form-control" id="new-location">
                         </div>
-                        <div class="form-group">
-                            <label for="new-landmarks">Landmarks</label>
-                            <input type="text" class="form-control" id="new-landmarks">
+
+                        <div id="new-landmarks">
+                                <div class="form-group">
+                                    <label for="new-landmark">Landmark</label>
+                                    <input type="text" class="form-control new-landmark">
+                                </div>
                         </div>
+
                         <div class="form-group">
                             <label for="new-date">Date</label>
                             <input type="date" class="form-control" id="new-date">
                         </div>
+
                         <div class="form-group">
                             <label for="new-notes">Notes</label>
-                            <input type="text-area" class="form-control" id="new-notes">
+                            <textarea id="new-notes" class="form-control"></textarea>
                         </div>
+
+                        <span class="btn btn-primary" id="add-landmark">Another landmark</span>
 
                         <button type="submit" class="btn">Add</button>
                     </form>
